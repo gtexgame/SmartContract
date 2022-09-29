@@ -1,0 +1,540 @@
+# This workflow will build and push a node.js application to an Azure Web App when a commit is pushed to your default branch.
+#
+# This workflow assumes you have already created the target Azure App Service web app.
+# For instructions see https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-cli
+# Syntax highlighted code block
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+- Bulleted
+
+- List21-12-26 10:00:18.669: E/ModuleLoader(10065): [E/HMSCore/ModuleLoader 10052:1 :99] Instancing module HuaweiIdentity.API failed. java.lang.ClassNotFoundException: com.huawei.hms.identity.MainEntry
+
+21-12-26 10:00:18.673: I/HwIDProvider(10065): [I//HwIDProvider 10052:1 :122] Enter static
+
+21-12-26 10:00:18.675: I/HwIDProvider(10065): [I//HwIDProvider 10052:1 :135] Out static
+
+21-12-26 10:00:18.748: I/HwIDInnerProvider(10065): [I//HwIDInnerProvider 10052:1 :39] Enter static
+
+21-12-26 10:00:18.751: I/HwIDInnerProvider(10065): [I//HwIDInnerProvider 10052:1 :55] Out static
+
+21-12-26 10:00:18.810: I/ModuleLoader(10065): [I/HMSCore/ModuleLoader 10052:1 :142] add module DynamicModuleManager ,  com.huawei.hms.dynamic.module.manager.MainEntry
+
+21-12-26 10:00:18.814: I/ModuleLoader(10065): [I/HMSCore/ModuleLoader 10052:1 :142] add module safetydetect,  com.huawei.hms.safetydetect.MainEntry
+
+21-12-26 10:00:18.817: I/ModuleLoader(10065): [I/HMSCore/ModuleLoader 10052:1 :142] add module HwAML,  com.huawei.aml.MainEntry
+
+21-12-26 10:00:18.821: I/ModuleLoader(10065): [I/HMSCore/ModuleLoader 10052:1 :142] add module litedrm ,  com.huawei.hms.litedrm.MainEntry
+
+21-12-26 10:00:18.838: I/ScopeUtil(10065): [I/HMSCore/ScopeUtil 10052:7864 :88] load all AppPermission.
+
+21-12-26 10:00:18.969: I/CheckUpdateVersionTools(10065): [I/HMSCore/CheckUpdateVersionTools 10052:1 :274] not need update
+
+21-12-26 10:00:19.127: I/HwID_MainEntry(10065): [I//HwID_MainEntry 10052:1 :28] HwID_MainEntry onCreated
+
+21-12-26 10:00:19.191: I/HwJOS(10065): [I/HwJOS/HwJOS 10052:1 :42] jos module init.
+
+21-12-26 10:00:19.198: I/HwIDInnerService(10065): [I//HwIDInnerService 10052:1 :207] registerCallback,type:0
+
+21-12-26 10:00:19.233: I/CommonUtils(10065): [I//CommonUtils 10052:7867 :68] versionName 3.0.3.300
+
+21-12-26 10:00:19.239: I/LogX(10065): [I/hwsns/LogX 10052:7868 :53] SNS startup, the version is: [VersionCode: 30003300, VersionName: 3.0.3.300]
+
+21-12-26 10:00:19.260: E/PropertyUtils(10065): [E/HwID_APK_log[3.0.3.300]/PropertyUtils 10052:7867 :460] Build.VERSION.SDK_INT : 23 isPhoneStillInLockMode false
+
+21-12-26 10:00:19.263: I/HwIDApplicationContext(10065): [I/HwID_APK_log[3.0.3.300]/HwIDApplicationContext 10052:7867 :127] HwIDApplication oncreate
+
+21-12-26 10:00:19.265: I/VersionUpdateHelper(10065): [I/HwID_APK_log[3.0.3.300]/VersionUpdateHelper 10052:7867 :38] Enter update
+
+21-12-26 10:00:19.297: I/hms_pay(10052): ThreadPoolManager    ThreadPool init!
+
+21-12-26 10:00:19.304: E/VersionUpdateHelper(10065): [E/HwID_APK_log[3.0.3.300]/VersionUpdateHelper 10052:7867 :49] old v3, current version is 3
+
+21-12-26 10:00:19.310: I/HWID_FileUtil(10065): [I/HwID_APK_log[3.0.3.300]/HWID_FileUtil 10052:7867 :291] Enter setProperties
+
+21-12-26 10:00:19.314: I/hms_pay(10052): hms_pay    pay MainEntry onCreated
+
+21-12-26 10:00:19.367: I/HWID_FileUtil(10065): [I/HwID_APK_log[3.0.3.300]/HWID_FileUtil 10052:7867 :319] Out setProperties
+
+21-12-26 10:00:19.370: I/VersionUpdateHelper(10065): [I/HwID_APK_log[3.0.3.300]/VersionUpdateHelper 10052:7867 :58] Out update
+
+21-12-26 10:00:19.375: I/HwIDApplicationContext(10065): [I/HwID_APK_log[3.0.3.300]/HwIDApplicationContext 10052:7867 :142] initInnerBroadcast 
+
+21-12-26 10:00:19.459: I/hms_pay(10052): CrashHandler    CrashHandler init
+
+21-12-26 10:00:19.465: I/PushTokenCase(10065): [I/HwID_APK_log[3.0.3.300]/PushTokenCase 10052:7867 :68] regPushEvent
+
+21-12-26 10:00:19.474: I/HwIDApplicationContext(10065): [I/HwID_APK_log[3.0.3.300]/HwIDApplicationContext 10052:7867 :168] Start register network change receiver.
+
+21-12-26 10:00:19.496: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7867 :334] getHwAccount hasAccount Finish
+
+21-12-26 10:00:19.503: I/hms_pay(10052): hms_pay    pay IAPEntry MainEntry finished 
+
+21-12-26 10:00:19.506: I/hms_pay(10052): hms_pay    IAP MainEntry onCreated 
+
+21-12-26 10:00:19.510: I/hms_pay(10052): CacheMgr    register Time Change Receiver, com.huawei.hms.app.CoreApplication@4421e3a
+
+21-12-26 10:00:19.512: I/HwIDInnerService(10065): [I/HwID_APK_log[3.0.3.300]/HwIDInnerService 10052:1 :207] registerCallback,type:0
+
+21-12-26 10:00:19.516: I/game(10065): [I/HwJOS/game 10052:1 :58] game module init.
+
+21-12-26 10:00:19.521: I/OpenDevice(10065): [I/opendevice/OpenDevice 10052:1 :32] OpenDevice onCreated.
+
+21-12-26 10:00:19.634: I/EmuiUtil(10065): [I/HwID_APK_log[3.0.3.300]/EmuiUtil 10052:7867 :281] the emui version code is::0
+
+21-12-26 10:00:19.639: I/EmuiUtil(10065): [I/HwID_APK_log[3.0.3.300]/EmuiUtil 10052:7867 :236] getEmuiType emuiVersionCode=0
+
+21-12-26 10:00:19.655: I/AppContext(10065): [I/HwLocation/AppContext 10052:1 :48] onCreate
+
+21-12-26 10:00:19.664: I/MainEntry(10065): [I/HwLocation/MainEntry 10052:1 :43] location module init.
+
+21-12-26 10:00:19.667: I/LocationManagerImpl(10065): [I/HwLocation/LocationManagerImpl 10052:1 :76] init
+
+21-12-26 10:00:19.671: I/DynamicModuleMgrEntry(10065): [I/HMSCore/DynamicModuleMgrEntry 10052:1 :42] onCreated.
+
+21-12-26 10:00:19.678: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:7875 :143] bindHwNLPService begin,mConnectCount=0
+
+21-12-26 10:00:19.684: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :236] checkUninitializedAnalytics not initialized
+
+21-12-26 10:00:19.688: I/DynamicModuleMgrEntry(10065): [I/HMSCore/DynamicModuleMgrEntry 10052:7876 :66] begin install dynamic apk.
+
+21-12-26 10:00:19.692: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :49] hwHmsService == null && connectState=0 && connectCount=1
+
+21-12-26 10:00:19.696: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :236] checkUninitializedAnalytics not initialized
+
+21-12-26 10:00:19.800: I/ScopeUtil(10065): [I/HMSCore/ScopeUtil 10052:7864 :165] match apps : [packagename = com.huawei.appmarket appid = 1027162]
+
+21-12-26 10:00:19.925: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7867 :382] int getHwAccount VerifyFlag:0 is invalid
+
+21-12-26 10:00:19.928: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7867 :384] getHwAccount getUserData 0 Finish
+
+21-12-26 10:00:19.943: I/SerializedObject(10065): [I/HMSCore/SerializedObject 10052:7864 :76] read type class com.huawei.hms.auth.scope.bean.AppScope from disk sucessfully.
+
+21-12-26 10:00:19.951: I/ScopeUtil(10065): [I/HMSCore/ScopeUtil 10052:7864 :136] not need to load again.appId = 1027162
+
+21-12-26 10:00:19.963: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7867 :389] getHwAccount getUserData 1 Finish
+
+21-12-26 10:00:19.969: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7867 :400] getHwAccount  Finish
+
+21-12-26 10:00:19.974: I/HwIDApplicationContext(10065): [I/HwID_APK_log[3.0.3.300]/HwIDApplicationContext 10052:7867 :178] debug== send broadcast
+
+21-12-26 10:00:19.980: I/bvk(10065): [I/HwID_APK_log[3.0.3.300]/bvk 10052:7867 :239] deleteCachedFiles
+
+21-12-26 10:00:20.028: W/ModuleUpdateImpl(10065): [W/HMSCore/ModuleUpdateImpl 10052:7876 :39] network is unAvaiable.
+
+21-12-26 10:00:20.031: E/DynamicModuleUtil(10065): [E/HMSCore/DynamicModuleUtil 10052:7876 :114] An error occurred while read Package-Info(versionName and versionCode).
+
+21-12-26 10:00:20.033: I/HsfModuleInstaller(10065): [I/HMSCore/HsfModuleInstaller 10052:7876 :221] registerHMSInstallHsfReceiver
+
+21-12-26 10:00:21.588: I/LocationTracker(10065): [I/HMSCore/LocationTracker 10052:7877 :120] initHiAnalytics begin.
+
+21-12-26 10:00:21.653: I/HMSCoreService(10065): [I/HMSCore/HMSCoreService 10052:1 :27] Enter onCreate.
+
+21-12-26 10:00:21.656: I/HMSCoreService(10065): [I/HMSCore/HMSCoreService 10052:1 :32] Enter onStartCommand.
+
+21-12-26 10:00:21.667: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7877 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:21.671: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7877 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:21.675: I/BaseUtil(10065): [I/HwID_APK_log[3.0.3.300]/BaseUtil 10052:1 :121] enter networkIsAvaiable
+
+21-12-26 10:00:21.678: I/BaseUtil(10065): [I/HwID_APK_log[3.0.3.300]/BaseUtil 10052:1 :145] NetworkInfo  state is unaviable
+
+21-12-26 10:00:21.681: E/HwidNetWorkChangeReceiver(10065): [E/HwID_APK_log[3.0.3.300]/HwidNetWorkChangeReceiver 10052:1 :58] The network is unavailable and does not need to be triggered.
+
+21-12-26 10:00:21.695: I/GameNetBroadcastReceiver(10065): [I/HwJOS/GameNetBroadcastReceiver 10052:1 :39] NetBroadcastReceiver is Received
+
+21-12-26 10:00:21.699: I/OnLoginSuccessBroadcastReceiver(10065): [I/HwID_APK_log[3.0.3.300]/OnLoginSuccessBroadcastReceiver 10052:1 :186] onReceive here
+
+21-12-26 10:00:21.704: I/OnLoginSuccessBroadcastReceiver(10065): [I/HwID_APK_log[3.0.3.300]/OnLoginSuccessBroadcastReceiver 10052:7892 :260] Enter readInfo2Cache
+
+21-12-26 10:00:21.707: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=1
+
+21-12-26 10:00:21.710: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:21.720: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:1 :334] getHwAccount hasAccount Finish
+
+21-12-26 10:00:21.800: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:1 :382] int getHwAccount VerifyFlag:0 is invalid
+
+21-12-26 10:00:21.802: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:1 :384] getHwAccount getUserData 0 Finish
+
+21-12-26 10:00:21.835: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:1 :389] getHwAccount getUserData 1 Finish
+
+21-12-26 10:00:21.841: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:1 :400] getHwAccount  Finish
+
+21-12-26 10:00:21.847: I/OnLoginSuccessBroadcastReceiver(10065): [I/HwID_APK_log[3.0.3.300]/OnLoginSuccessBroadcastReceiver 10052:7892 :262] Out readInfo2Cache
+
+21-12-26 10:00:21.859: I/PushPresenter(10065): [I/HwID_APK_log[3.0.3.300]/PushPresenter 10052:1 :143] initSysAccountLoginBroadcast
+
+21-12-26 10:00:21.865: I/OnLoginSuccessBroadcastReceiver(10065): [I/HwID_APK_log[3.0.3.300]/OnLoginSuccessBroadcastReceiver 10052:1 :197] just application stated ,keep st in the old status
+
+21-12-26 10:00:21.882: I/PushPresenter(10065): [I/HwID_APK_log[3.0.3.300]/PushPresenter 10052:7895 :197] executePushTokenCase
+
+21-12-26 10:00:21.889: I/UseCaseHandler(10065): [I/HwID_APK_log[3.0.3.300]/UseCaseHandler 10052:7897 :90] cjt begin | TransID:a9794604-6f26-46ef-8487-e14cf0707e3b
+
+21-12-26 10:00:21.896: I/PushTokenCase(10065): [I/HwID_APK_log[3.0.3.300]/PushTokenCase 10052:7897 :78] getToken
+
+21-12-26 10:00:21.901: I/UseCaseHandler(10065): [I/HwID_APK_log[3.0.3.300]/UseCaseHandler 10052:7896 :90] cjr begin | TransID:2c36ffda-4c8c-4f9b-b710-d6929fd1f1e3
+
+21-12-26 10:00:21.912: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:21.921: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:21.924: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=1
+
+21-12-26 10:00:21.926: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:21.932: I/HuaweiPushApiImp(10065): [I/PushLog/HuaweiPushApiImp 10052:7897 :53] get token, pkgName:com.huawei.hwid
+
+21-12-26 10:00:21.944: I/PushTokenCase(10065): [I/HwID_APK_log[3.0.3.300]/PushTokenCase 10052:7897 :84] getPushToken4MyCenter.
+
+21-12-26 10:00:21.948: I/InAppTransport(10065): [I/HMSCore/InAppTransport 10052:7897 :95] In-App Request, uri: push.gettoken, clientIdentity: {appId: 10132067, hostAppID: 10132067, packageName: com.huawei.hwid, sdkVersion: 0, uid: 0, transactionId: }
+
+21-12-26 10:00:21.953: I/GetTokenRequest(10065): [I/PushLog/GetTokenRequest 10052:7897 :73] enter get token request:com.huawei.hms.support.api.entity.push.TokenReq{ pkgName: com.huawei.hwid isFirstTime: false scope: null appId: null}, send broadcast to pushagent.
+
+21-12-26 10:00:21.991: I/UseCaseHandler(10065): [I/HwID_APK_log[3.0.3.300]/UseCaseHandler 10052:7896 :92] cjr end | TransID:2c36ffda-4c8c-4f9b-b710-d6929fd1f1e3
+
+21-12-26 10:00:22.009: I/FileUtil(10065): [I/HMSCore/FileUtil 10052:7876 :262] begin extractNativeLibrary
+
+21-12-26 10:00:22.015: I/OnLoginSuccessBroadcastReceiver(10065): [I/HwID_APK_log[3.0.3.300]/OnLoginSuccessBroadcastReceiver 10052:7892 :170] downLoadPic
+
+21-12-26 10:00:22.028: I/UseCaseHandler(10065): [I/HwID_APK_log[3.0.3.300]/UseCaseHandler 10052:7908 :90] cjm begin | TransID:7090a222-6e94-4f7c-a925-52c1869348b3
+
+21-12-26 10:00:22.034: I/InAppResponse(10065): [I/HMSCore/InAppResponse 10052:7897 :94] In-App Response, uri: push.gettoken, statusCode: 0
+
+21-12-26 10:00:22.040: I/HuaweiPushApiImp(10065): [I/PushLog/HuaweiPushApiImp 10052:7897 :77] get token complete, the return code:0
+
+21-12-26 10:00:22.043: I/UseCaseHandler(10065): [I/HwID_APK_log[3.0.3.300]/UseCaseHandler 10052:7897 :92] cjt end | TransID:a9794604-6f26-46ef-8487-e14cf0707e3b
+
+21-12-26 10:00:22.142: I/UseCaseHandler(10065): [I/HwID_APK_log[3.0.3.300]/UseCaseHandler 10052:7908 :92] cjm end | TransID:7090a222-6e94-4f7c-a925-52c1869348b3
+
+21-12-26 10:00:22.160: I/InAppTransport(10065): [I/HMSCore/InAppTransport 10052:7910 :95] In-App Request, uri: pm.install.package, clientIdentity: {appId: 10132067, hostAppID: 10132067, packageName: com.huawei.hwid, sdkVersion: 0, uid: 0, transactionId: }
+
+21-12-26 10:00:22.244: I/InAppResponse(10065): [I/HMSCore/InAppResponse 10052:7910 :94] In-App Response, uri: pm.install.package, statusCode: 0
+
+21-12-26 10:00:22.254: I/HsfModuleInstaller(10065): [I/HMSCore/HsfModuleInstaller 10052:1 :396] install result , statusCode: 7001, statusMessage: Permission Denial, requires android.permission.INSTALL_PACKAGES.
+
+21-12-26 10:00:23.701: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=2
+
+21-12-26 10:00:23.704: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:23.903: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:23.915: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:23.917: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=2
+
+21-12-26 10:00:23.921: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:25.702: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=3
+
+21-12-26 10:00:25.704: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:25.909: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:25.911: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:25.913: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=3
+
+21-12-26 10:00:25.915: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:27.703: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=4
+
+21-12-26 10:00:27.705: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:27.915: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:27.917: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:27.920: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=4
+
+21-12-26 10:00:27.922: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:29.706: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=5
+
+21-12-26 10:00:29.713: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:29.921: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:29.923: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:29.925: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=5
+
+21-12-26 10:00:29.927: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:31.711: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=6
+
+21-12-26 10:00:31.716: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:31.927: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:31.995: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:31.998: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=6
+
+21-12-26 10:00:32.001: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:33.713: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=7
+
+21-12-26 10:00:33.715: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:33.964: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:33.966: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:33.968: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=7
+
+21-12-26 10:00:33.970: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:35.713: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=8
+
+21-12-26 10:00:35.715: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:35.970: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:35.972: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:35.974: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=8
+
+21-12-26 10:00:35.976: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:37.714: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=9
+
+21-12-26 10:00:37.717: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:37.976: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:37.978: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:37.980: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=9
+
+21-12-26 10:00:37.982: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:39.724: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=10
+
+21-12-26 10:00:39.728: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:39.982: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:40.050: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:40.058: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=10
+
+21-12-26 10:00:40.062: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:41.717: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=0 && connectCount=11
+
+21-12-26 10:00:41.719: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:41.986: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :186] handleMessage case 1
+
+21-12-26 10:00:41.988: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:41.990: I/NLPLocationServiceConnection(10065): [I/HwLocation/NLPLocationServiceConnection 10052:1 :143] bindHwNLPService begin,mConnectCount=11
+
+21-12-26 10:00:41.992: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:41.994: E/NLPLocationServiceConnection(10065): [E/HwLocation/NLPLocationServiceConnection 10052:1 :149] try connect 10 times, connection fail
+
+21-12-26 10:00:41.996: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:1 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:43.719: I/NLPLocationProviderClient(10065): [I/HwLocation/NLPLocationProviderClient 10052:7875 :60] while circle, hwHmsService is null=true && connectState=2 && connectCount=11
+
+21-12-26 10:00:43.721: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:43.723: I/FusedLocationProviderClientImpl(10065): [I/HwLocation/FusedLocationProviderClientImpl 10052:7875 :142] init isNlpAvaliable=false
+
+21-12-26 10:00:43.725: I/LocationTracker(10065): [I/HwLocation/LocationTracker 10052:7875 :221] onEvent isEnabledUserExperience is false
+
+21-12-26 10:00:52.429: E/HsfModuleInstaller(10065): [E/HMSCore/HsfModuleInstaller 10052:7876 :125] connectHsfSDK await false
+
+21-12-26 10:00:52.433: I/ModuleCopyUtil(10065): [I/HMSCore/ModuleCopyUtil 10052:7876 :202] deleteOldVersion reserve huawei_module_quic version 10013300
+
+21-12-26 10:00:52.439: I/ModuleCopyUtil(10065): [I/HMSCore/ModuleCopyUtil 10052:7876 :202] deleteOldVersion reserve huawei_module_dynamicloader version 10020300
+
+21-12-26 10:00:52.441: I/ModuleCopyUtil(10065): [I/HMSCore/ModuleCopyUtil 10052:7876 :202] deleteOldVersion reserve huawei_module_scankit version 10320300
+
+21-12-26 10:00:52.444: I/ModuleCopyUtil(10065): [I/HMSCore/ModuleCopyUtil 10052:7876 :202] deleteOldVersion reserve huawei_module_tomtommaps version 50001300
+
+21-12-26 10:00:52.446: I/ModuleCopyUtil(10065): [I/HMSCore/ModuleCopyUtil 10052:7876 :202] deleteOldVersion reserve huawei_module_maps version 60201300
+
+21-12-26 10:00:52.448: I/ModuleCopyUtil(10065): [I/HMSCore/ModuleCopyUtil 10052:7876 :202] deleteOldVersion reserve huawei_module_huaweimaps version 60201300
+
+21-12-26 10:00:52.550: I/HsfModuleInstaller(10065): [I/HMSCore/HsfModuleInstaller 10052:7876 :186] deleteOld HSF Version
+
+21-12-26 15:11:30.860: I/ScopeUpdateForNetChangeReceiver(10065): [I/HMSCore/ScopeUpdateForNetChangeReceiver 10052:1 :68] loadAppPermission for ScopeUpdateForNetChangeReceiver.
+
+21-12-26 15:11:30.966: I/ScopeUtil(10065): [I/HMSCore/ScopeUtil 10052:7914 :88] load all AppPermission.
+
+21-12-26 15:11:31.027: I/BaseUtil(10065): [I/HwID_APK_log[3.0.3.300]/BaseUtil 10052:1 :121] enter networkIsAvaiable
+
+21-12-26 15:11:31.526: I/HwidNetWorkChangeReceiver(10065): [I/HwID_APK_log[3.0.3.300]/HwidNetWorkChangeReceiver 10052:1 :67] The connectivity_action broadcast is received, and the heartbeat is started.
+
+21-12-26 15:11:31.542: I/PersistentPreferenceDataHelper(10065): [I/HwID_APK_log[3.0.3.300]/PersistentPreferenceDataHelper 10052:1 :245] getIntFromFile,keyName:heartbeatSupport
+
+21-12-26 15:11:31.549: I/PersistentPreferenceDataHelper(10065): [I/HwID_APK_log[3.0.3.300]/PersistentPreferenceDataHelper 10052:1 :269] getLongFromFileOnCurProcessor,fileType:4,keyName:heartbeatSupport
+
+21-12-26 15:11:31.589: I/PersistentPreferenceDataHelper(10065): [I/HwID_APK_log[3.0.3.300]/PersistentPreferenceDataHelper 10052:1 :256] getLongFromFile,keyName:heartbeatSupport finish.
+
+21-12-26 15:11:31.592: I/HeartbeatCacheManager(10065): [I/HwID_APK_log[3.0.3.300]/HeartbeatCacheManager 10052:1 :146] GetHeartbeatSupport is 0.
+
+21-12-26 15:11:31.595: I/HwidNetWorkChangeReceiver(10065): [I/HwID_APK_log[3.0.3.300]/HwidNetWorkChangeReceiver 10052:1 :184] The country or site does not support the heartbeat.
+
+21-12-26 15:11:31.603: I/GameNetBroadcastReceiver(10065): [I/HwJOS/GameNetBroadcastReceiver 10052:1 :39] NetBroadcastReceiver is Received
+
+21-12-26 15:11:31.650: I/HwIDInnerService(10065): [I/HwID_APK_log[3.0.3.300]/HwIDInnerService 10052:7919 :87] GetServiceToken transID:27563d94-4dd1-4235-ac3d-6fd4ffb24f16
+
+21-12-26 15:11:31.810: I/InAppTransport(10065): [I/HMSCore/InAppTransport 10052:7919 :95] In-App Request, uri: hwid.inner.getServiceToken, clientIdentity: {appId: 10132067, hostAppID: 10132067, packageName: com.huawei.hwid, sdkVersion: 0, uid: 0, transactionId: }
+
+21-12-26 15:11:31.892: E/PropertyUtils(10065): [E/HwID_APK_log[3.0.3.300]/PropertyUtils 10052:7919 :460] Build.VERSION.SDK_INT : 23 isPhoneStillInLockMode false
+
+21-12-26 15:11:31.895: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7919 :62] GetServiceToken onRequest, transID:27563d94-4dd1-4235-ac3d-6fd4ffb24f16
+
+21-12-26 15:11:31.904: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7919 :74] GetServiceToken getAccts Finish, transID:27563d94-4dd1-4235-ac3d-6fd4ffb24f16
+
+21-12-26 15:11:31.917: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7919 :334] getHwAccount hasAccount Finish
+
+21-12-26 15:11:31.924: E/UpdateVersionManager(10065): [E/HMSCore/UpdateVersionManager 10052:1 :119] all modules not need update.
+
+21-12-26 15:11:32.188: I/UpdateVersionManager(10065): [I/HMSCore/UpdateVersionManager 10052:1 :73] condition not Satisfied or other process is runing.
+
+21-12-26 15:11:32.192: I/BaseUtil(10065): [I/HwID_APK_log[3.0.3.300]/BaseUtil 10052:1 :121] enter networkIsAvaiable
+
+21-12-26 15:11:32.208: I/HwidNetWorkChangeReceiver(10065): [I/HwID_APK_log[3.0.3.300]/HwidNetWorkChangeReceiver 10052:1 :67] The connectivity_action broadcast is received, and the heartbeat is started.
+
+21-12-26 15:11:32.212: I/HwidNetWorkChangeReceiver(10065): [I/HwID_APK_log[3.0.3.300]/HwidNetWorkChangeReceiver 10052:1 :184] The country or site does not support the heartbeat.
+
+21-12-26 15:11:32.215: I/GameNetBroadcastReceiver(10065): [I/HwJOS/GameNetBroadcastReceiver 10052:1 :39] NetBroadcastReceiver is Received
+
+21-12-26 15:11:32.218: I/HwIDInnerService(10065): [I/HwID_APK_log[3.0.3.300]/HwIDInnerService 10052:7920 :87] GetServiceToken transID:851efb3b-3109-4eb3-8bd7-7a7c20b378d6
+
+21-12-26 15:11:32.243: I/InAppTransport(10065): [I/HMSCore/InAppTransport 10052:7920 :95] In-App Request, uri: hwid.inner.getServiceToken, clientIdentity: {appId: 10132067, hostAppID: 10132067, packageName: com.huawei.hwid, sdkVersion: 0, uid: 0, transactionId: }
+
+21-12-26 15:11:32.263: E/PropertyUtils(10065): [E/HwID_APK_log[3.0.3.300]/PropertyUtils 10052:7920 :460] Build.VERSION.SDK_INT : 23 isPhoneStillInLockMode false
+
+21-12-26 15:11:32.267: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7920 :62] GetServiceToken onRequest, transID:851efb3b-3109-4eb3-8bd7-7a7c20b378d6
+
+21-12-26 15:11:32.269: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7920 :74] GetServiceToken getAccts Finish, transID:851efb3b-3109-4eb3-8bd7-7a7c20b378d6
+
+21-12-26 15:11:32.272: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7920 :334] getHwAccount hasAccount Finish
+
+21-12-26 15:11:32.277: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7919 :382] int getHwAccount VerifyFlag:0 is invalid
+
+21-12-26 15:11:32.280: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7919 :384] getHwAccount getUserData 0 Finish
+
+21-12-26 15:11:32.355: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7920 :382] int getHwAccount VerifyFlag:0 is invalid
+
+21-12-26 15:11:32.357: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7920 :384] getHwAccount getUserData 0 Finish
+
+21-12-26 15:11:32.360: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7919 :389] getHwAccount getUserData 1 Finish
+
+21-12-26 15:11:32.530: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7920 :389] getHwAccount getUserData 1 Finish
+
+21-12-26 15:11:32.598: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7919 :400] getHwAccount  Finish
+
+21-12-26 15:11:32.602: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7919 :79] GetServiceToken getAcct Finish, transID:27563d94-4dd1-4235-ac3d-6fd4ffb24f16
+
+21-12-26 15:11:32.604: I/APKAccountManager(10065): [I/HwID_APK_log[3.0.3.300]/APKAccountManager 10052:7920 :400] getHwAccount  Finish
+
+21-12-26 15:11:32.607: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7920 :79] GetServiceToken getAcct Finish, transID:851efb3b-3109-4eb3-8bd7-7a7c20b378d6
+
+21-12-26 15:11:32.654: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7919 :114] GetServiceToken  finish. transID:27563d94-4dd1-4235-ac3d-6fd4ffb24f16
+
+21-12-26 15:11:32.913: I/InAppResponse(10065): [I/HMSCore/InAppResponse 10052:7919 :94] In-App Response, uri: hwid.inner.getServiceToken, statusCode: 0
+
+21-12-26 15:11:32.915: I/GetServiceTokenRequest(10065): [I/HwID_APK_log[3.0.3.300]/GetServiceTokenRequest 10052:7920 :114] GetServiceToken  finish. transID:851efb3b-3109-4eb3-8bd7-7a7c20b378d6
+
+21-12-26 15:11:32.917: I/InAppResponse(10065): [I/HMSCore/InAppResponse 10052:7920 :94] In-App Response, uri: hwid.inner.getServiceToken, statusCode: 0
+
+21-12-26 15:11:33.275: I/ScopeUtil(10065): [I/HMSCore/ScopeUtil 10052:7914 :165] match apps : [packagename = com.huawei.appmarket appid = 1027162]
+
+21-12-26 15:11:33.367: I/SerializedObject(10065): [I/HMSCore/SerializedObject 10052:7914 :76] read type class com.huawei.hms.auth.scope.bean.AppScope from disk sucessfully.
+
+21-12-26 15:11:33.373: I/ScopeUtil(10065): [I/HMSCore/ScopeUtil 10052:7914 :136] not need to load again.appId = 1027162
+
+21-12-26 15:11:37.817: I/PushLogAC3203(10065): [I/PushLog/PushLogAC3203 10052:7924 :89] close connection
+
+1. Numbered
+
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+# To configure this workflow:
+#
+# 1. Download the Publish Profile for your Azure Web App. You can download this file from the Overview page of your Web App in the Azure Portal.
+#    For more information: https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel#generate-deployment-credentials
+#
+# 2. Create a secret in your repository named AZURE_WEBAPP_PUBLISH_PROFILE, paste the publish profile contents as the value of the secret.
+#    For instructions on obtaining the publish profile see: https://docs.microsoft.com/azure/app-service/deploy-github-actions#configure-the-github-secret
+#
+# 3. Change the value for the AZURE_WEBAPP_NAME. Optionally, change the AZURE_WEBAPP_PACKAGE_PATH and NODE_VERSION environment variables below.
+#
+# For more information on GitHub Actions for Azure: https://github.com/Azure/Actions
+# For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
+
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+env:
+  AZURE_WEBAPP_NAME: your-app-name    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  NODE_VERSION: '14.x'                # set this to the node version to use
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm run test --if-present
+
+    - name: Upload artifact for deployment job
+      uses: actions/upload-artifact@v3
+      with:
+        name: node-app
+        path: .
+
+  deploy:
+    permissions:
+      contents: none
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'Development'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v3
+      with:
+        name: node-app
+
+    - name: 'Deploy to Azure WebApp'
+      id: deploy-to-webapp 
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
